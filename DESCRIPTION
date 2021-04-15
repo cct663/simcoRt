@@ -2,7 +2,8 @@ Package: simcoRt
 Type: Package
 Title: Simulate glucocorticoid response curves.
 Version: 0.1.0
-Authors@R: person("Conor", "Taff", email = "cct663@gmail.com", role = c("aut", "cre"))
+Author: Conor Taff
+Maintainer: Conor Taff <cct663@gmail.com>
 Description: Simulation tools for studying physiological flexibility.
 License: GPL (>= 3)
 Encoding: UTF-8

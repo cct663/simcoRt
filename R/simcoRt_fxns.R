@@ -12,15 +12,15 @@
 #'
 #' @section simcoRt functions:
 #'
-#'     cort_sim1: simulates true phenotypic values for a population of animals with given parameters
+#'     cort_sim1: simulates phenotypes
 #'
-#'     cort_sim2: simulates arbitrary number of individual physiological responses for each animal with adjustible variation
+#'     cort_sim2: simulates observed responses
 #'
-#'     cort_repeat: calculates repeatability of various common glucocorticoid measures from simulated datasets
+#'     cort_repeat: calculates repeatability
 #'
-#'     plot_cort_sim: plotting wrapper function for multipanel summary plot
+#'     plot_cort_sim: plotting wrapper
 #'
-#'     plot_cort_sim1: plotting wrapper function for single response curve plot
+#'     plot_cort_sim1: plotting wrapper
 #'
 #' @docType package
 #' @name simcoRt

@@ -1,0 +1,21 @@
+Package: simcoRt
+Type: Package
+Title: Simulate glucocorticoid response curves.
+Version: 0.1.0
+Authors@R: person("Conor", "Taff", email = "cct663@gmail.com", role = c("aut", "cre"))
+Description: Simulation tools for studying physiological flexibility.
+License: use_gpl_license()
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.2)
+Roxygen: list(markdown = TRUE)
+Imports:
+    ggplot2,
+    here,
+    MASS,
+    MBESS,
+    sp,
+    tidyverse,
+    gridExtra,
+    rptR
+RoxygenNote: 7.1.1

@@ -1,10 +1,11 @@
 Package: simcoRt
 Type: Package
-Title: Simulate glucocorticoid response curves.
+Title: Simulate glucocorticoid response curves
 Version: 0.1.0
 Author: Conor Taff
 Maintainer: Conor Taff <cct663@gmail.com>
 Description: Simulation tools for studying physiological flexibility.
+Date: 2021
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true

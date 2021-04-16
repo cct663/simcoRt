@@ -26,6 +26,26 @@
 #' @name simcoRt
 NULL
 
+#' Red winged blackbird corticosterone responses.
+#'
+#' A dataset containing 7-timepoint stress series measures of red winged blackbirds.
+#'
+#' @format A data frame with 408 rows and 12 variables:
+#' \describe{
+#' \item{id}{unique identity of this animal}
+#' \item{time_sec}{time sampling starts, in seconds after midnight}
+#' \item{sex}{sex of this individual}
+#' \item{mass}{mass, in grams}
+#' \item{tarsus}{tarsus length, in mm}
+#' \item{wing}{flattened wing chord, in mm}
+#' \item{h_bill}{head plus bill length, in mm}
+#' \item{lh_stg}{life history stage, earl-breeding; late-breeding; or molt}
+#' \item{age}{age, A = adult, SY = second year, U = unknown}
+#' \item{lat_sec}{latency after capture for measurement, in seconds}
+#' \item{cort}{corticosterone measurement, ng/ul}}
+#'
+"rwbb"
+
 #' simulate true phenotypic values for acute glucocorticoid response
 #'
 #' This function simulates glucocoriticoid response parameters for a population of animals of size n.
@@ -696,13 +716,13 @@ NULL
       )
 
       # Make three different plots
-      p1 <- ggplot2::ggplot(data$simulated_dataset_long, mapping = aes(x = time, y = cort, by = animal_sample, color = animal)) +
+      p1 <- ggplot2::ggplot(data$simulated_dataset_long, mapping = ggplot2::aes(x = time, y = cort, by = animal_sample, color = animal)) +
         ggplot2::geom_line() + ggplot2::theme_classic() + viridis::scale_color_viridis(discrete = TRUE) +
         ggplot2::guides(color = FALSE)
 
       p2 <- p1 + ggplot2::facet_wrap(~ animal)
 
-      p3 <- ggplot2::ggplot(data = data$simulated_dataset_long, mapping = aes(x = animal, y = cort, color = animal, fill = animal)) +
+      p3 <- ggplot2::ggplot(data = data$simulated_dataset_long, mapping = ggplot2::aes(x = animal, y = cort, color = animal, fill = animal)) +
         ggplot2::geom_boxplot(alpha = 0.2) + viridis::scale_fill_viridis(discrete = TRUE) +
         ggplot2::geom_point() + ggplot2::facet_wrap(~time, scales = "free") + viridis::scale_color_viridis(discrete = TRUE) +
         ggplot2::guides(color = FALSE, fill = FALSE) +

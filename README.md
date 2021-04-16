@@ -20,6 +20,6 @@ devtools::install_github("cct663/simcoRt")
 
 An example dataset simulated with the default parameters looks something like this.
 
-![](example.png)\
+![](example.png)
 
 # License

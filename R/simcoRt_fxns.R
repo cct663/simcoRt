@@ -26,7 +26,7 @@
 #' @name simcoRt
 NULL
 
-#' Red winged blackbird corticosterone responses.
+#' red winged blackbird corticosterone data
 #'
 #' A dataset containing 7-timepoint stress series measures of red winged blackbirds.
 #'
